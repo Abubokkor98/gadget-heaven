@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
-
+import Footer from "../Footer/Footer";
 import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import Footer from "../Components/Footer";
 export const ProductContext = createContext();
 const msgInfo = {
   position: "top-center",
@@ -66,7 +65,7 @@ const MainRoot = () => {
           </div>
         </ProductContext.Provider>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
