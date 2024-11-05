@@ -16,7 +16,7 @@ const menuItems = [
 const Navbar = () => {
   const { cartArray, wishlistArray } = useContext(ProductContext);
   return (
-    <div className="border border-purple-600 rounded-2xl  p-1">
+    <div className="border border-purple-600 rounded-2xl p-1">
       <div className="bg-purple-600 rounded-2xl pt-5 pb-72 relative">
         <div className="navbar">
           <div className="navbar-start">
@@ -60,7 +60,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="navbar-end space-x-4 ">
+          <div className="navbar-end space-x-4 pr-5">
             <NavLink
               to={"/cart"}
               className="btn bg-white border rounded-full text-lg"

@@ -26,7 +26,7 @@ const Home = () => {
       });
       setCatProducts(findProducts);
     }
-    document.title = "GadgetHeaven E-Commerce a gadget-buying website";
+    document.title = "Gadgets | GadgetHeaven";
   }, [categoryId, products]);
 
   return (

@@ -59,7 +59,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    document.title = "Dashboard | GadgetHeaven ";
+    document.title = "Dashboard | GadgetHeaven";
   }, []);
   console.log(totalPrice);
 
