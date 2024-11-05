@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import { FaDeleteLeft } from "react-icons/fa6";
+import { FaRegTrashCan } from "react-icons/fa6";
 
 const WishlistCompo = ({ wishlist }) => {
   return (
@@ -25,7 +24,7 @@ const WishlistCompo = ({ wishlist }) => {
       </div>
 
       <button className="cursor-pointer ">
-        <FaDeleteLeft className="text-3xl text-red-500 mx-10  " />
+        <FaRegTrashCan className="text-3xl text-red-500 mx-10  " />
       </button>
     </div>
   );

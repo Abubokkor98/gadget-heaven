@@ -13,7 +13,6 @@ const Categories = ({ category, handelIsActive }) => {
       >
         {category.category_name}
       </NavLink>
-      {/* <NavLink className="btn">All Products</NavLink> */}
     </>
   );
 };

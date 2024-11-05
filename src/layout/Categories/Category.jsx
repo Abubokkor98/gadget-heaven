@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 const Category = () => {
   const { categoryId } = useParams();
-  console.log(categoryId);
+  // console.log(categoryId);
   return <></>;
 };
 

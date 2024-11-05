@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const Heading = ({ title, p }) => {
   return (
     <div className="flex flex-col justify-center items-center mb-10 space-y-3">
