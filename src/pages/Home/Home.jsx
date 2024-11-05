@@ -63,7 +63,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="w-[80%] grid lg:grid-cols-3 grid-cols-1 gap-4 h-full">
+          <div className="w-[80%] grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 h-full">
             {catProducts.length !== 0 ? (
               <>
                 {catProducts.map((card) => (

@@ -21,8 +21,8 @@ const MainRoot = () => {
   const handelAddToCart = (cartItem) => {
     setCartArray((prev) => [...prev, cartItem]);
     toast.success("Successfully Add to Cart!", msgInfo);
-    // console.log("Cart click", cartItem);
   };
+  
   const handelWishlist = (wishlistItem) => {
     const findToWishlist = wishlistArray.find(
       (item) => item.product_id === wishlistItem.product_id
@@ -33,8 +33,6 @@ const MainRoot = () => {
     } else {
       toast.error("Product Already Exist in Wishlist!", msgInfo);
     }
-
-    // console.log("Wishlist click", wishlistItem);
   };
 
   const getProducts = async () => {

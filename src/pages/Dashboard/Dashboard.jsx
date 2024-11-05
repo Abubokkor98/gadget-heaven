@@ -130,6 +130,7 @@ const Dashboard = () => {
             />
           ))}
 
+        {/* modal */}
       <dialog
         id="purchaseModel"
         className="modal modal-middle sm:modal-middle flex justify-center items-center text-center lg:px-0 px-3"
@@ -139,7 +140,7 @@ const Dashboard = () => {
             <img src="./assets/Group.png" className="w-20" alt="" />
           </div>
           <h3 className="text-4xl font-bold text-gray-800">
-            Payment Successfully
+            Payment Successful
           </h3>
 
           <p className="py-4 font-semibold text-xl" id="errorId"></p>
