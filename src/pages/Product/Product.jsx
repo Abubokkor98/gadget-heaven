@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../../layout/Root/MainRoot";
@@ -114,9 +113,9 @@ const Product = () => {
             <button
               onClick={() => handelWishlistBtn(findProduct)}
               disabled={isAdded}
-              className="btn rounded-full text-lg bg-transparent border"
+              className="btn rounded-full text-lg bg-transparent border hover:bg-purple-600 hover:text-white"
             >
-              <FaRegHeart />
+              <FaRegHeart className="" />
             </button>
           </div>
         </div>

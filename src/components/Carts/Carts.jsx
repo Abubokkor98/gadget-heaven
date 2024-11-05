@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { FaDeleteLeft } from "react-icons/fa6";
+import { FaRegTrashCan } from "react-icons/fa6";
 import { ProductContext } from "../../layout/Root/MainRoot";
 import { toast } from "react-toastify";
 const msgInfo = {
@@ -17,13 +17,11 @@ const Cart = ({ cart, isRemove = false }) => {
   const handelCartRemove = (id) => {
     const filterNadRemove = cartArray.filter((item) => {
       return item.product_id !== id;
-
-      // console.log(item);
     });
-    console.log(filterNadRemove);
     setCartArray(filterNadRemove);
-    toast.info("Successfully Remove Item ", msgInfo);
+    toast.warning("Item remove successfully", msgInfo);
   };
+
   return (
     <div className="flex justify-between gap-5 bg-gray-100 p-5 mt-10 rounded-xl">
       <div className="flex gap-5">
@@ -47,7 +45,7 @@ const Cart = ({ cart, isRemove = false }) => {
         onClick={() => handelCartRemove(cart.product_id)}
         className={`cursor-pointer ${isRemove ? "hidden" : ""}`}
       >
-        <FaDeleteLeft className="text-3xl text-red-500 mx-10  " />
+        <FaRegTrashCan  className="text-3xl text-red-500 mx-10  " />
       </button>
     </div>
   );

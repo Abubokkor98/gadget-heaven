@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-
-/* eslint-disable react/prop-types */
 import ReactStars from "react-rating-stars-component";
 const img =
   "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp";
