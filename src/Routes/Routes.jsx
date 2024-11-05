@@ -5,6 +5,7 @@ import Statistics from "../Components/Statistics";
 import Dashboard from "../Components/Dashboard";
 import History from "../Components/History";
 import Category from "../Components/Category";
+import ErrorPage from "../Components/ErrorPage";
 
 
 
@@ -12,6 +13,7 @@ const routes = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement: <ErrorPage></ErrorPage>,
       children:[
         {
           path: "/",
