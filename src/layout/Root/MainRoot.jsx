@@ -13,14 +13,13 @@ const msgInfo = {
 };
 const MainRoot = () => {
   const [products, setProducts] = useState([]);
-
   const [cartArray, setCartArray] = useState([]);
   const [wishlistArray, setWishlistArray] = useState([]);
   const [historyArray, setHistoryArray] = useState([]);
 
   const handelAddToCart = (cartItem) => {
     setCartArray((prev) => [...prev, cartItem]);
-    toast.success("Successfully Add to Cart!", msgInfo);
+    toast.success("Item added to cart", msgInfo);
   };
   
   const handelWishlist = (wishlistItem) => {
@@ -29,7 +28,7 @@ const MainRoot = () => {
     );
     if (!findToWishlist) {
       setWishlistArray((prev) => [...prev, wishlistItem]);
-      toast.success("Successfully Add to Wishlist!", msgInfo);
+      toast.success("Item added to Wishlist!", msgInfo);
     } else {
       toast.error("Product Already Exist in Wishlist!", msgInfo);
     }
@@ -44,8 +43,8 @@ const MainRoot = () => {
     getProducts();
   }, []);
   return (
-    <div className="b pt-5">
-      <div className="mx-auto xl:container md:w-11/12 lg:w-11/12 w-11/12 ">
+    <div className="pt-3">
+      <div className="max-w-screen-xl mx-auto">
         <ProductContext.Provider
           value={{
             products,
@@ -58,7 +57,7 @@ const MainRoot = () => {
             setHistoryArray,
           }}
         >
-          <div className="min-h-[calc(100vh-288px)]">
+          <div className="min-h-[calc(100vh-556px)]">
             <Outlet />
           </div>
         </ProductContext.Provider>

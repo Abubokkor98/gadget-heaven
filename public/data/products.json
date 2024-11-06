@@ -1,24 +1,6 @@
 [
-
   {
     "product_id": 1,
-    "product_title": "Gaming Laptop",
-    "product_image": "https://i.ibb.co.com/Jm8b7kz/gl.webp",
-    "category": "Computers",
-    "price": 1099,
-    "description": "High-performance gaming laptop with powerful GPU and SSD storage.",
-    "Specification": [
-      "Intel Core i7",
-      "16GB RAM",
-      "512GB SSD",
-      "NVIDIA GTX 1660"
-    ],
-    "availability": false,
-    "rating": 4.3,
-    "slug": "gaming-laptop"
-  },
-  {
-    "product_id": 2,
     "product_title": "Smartphone with Triple Camera",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/uamqs1mpohvuoonnzitx.jpg",
     "category": "Mobiles",
@@ -35,7 +17,7 @@
     "slug": "smartphone-with-triple-camera"
   },
   {
-    "product_id": 3,
+    "product_id": 2,
     "product_title": "Smart Watch",
     "product_image": "https://i.ibb.co.com/MBqqJTG/3794066.jpg",
     "category": "Wearables",
@@ -52,7 +34,7 @@
     "slug": "smart-watch"
   },
   {
-    "product_id": 4,
+    "product_id": 3,
     "product_title": "Portable Charger 10000mAh",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/mppuf6mj0pcsaixmxrfm.jpg",
     "category": "Accessories",
@@ -69,7 +51,7 @@
     "slug": "portable-charger-10000mah"
   },
   {
-    "product_id": 5,
+    "product_id": 4,
     "product_title": "Wireless Keyboard and Mouse",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/d7fzz3xy0bdveq84pr2h.jpg",
     "category": "Computers",
@@ -87,7 +69,7 @@
   },
  
   {
-    "product_id": 6,
+    "product_id": 5,
     "product_title": "Yoga Mat",
     "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/y8eyvbuc8tdzf1sgzyfx.jpg",
     "category": "Accessories",
@@ -102,6 +84,24 @@
     "availability": true,
     "rating": 4.6,
     "slug": "yoga-mat"
+  },
+  
+  {
+    "product_id": 6,
+    "product_title": "Gaming Laptop",
+    "product_image": "https://i.ibb.co.com/Jm8b7kz/gl.webp",
+    "category": "Computers",
+    "price": 1099,
+    "description": "High-performance gaming laptop with powerful GPU and SSD storage.",
+    "Specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA GTX 1660"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "slug": "gaming-laptop"
   },
 
   {

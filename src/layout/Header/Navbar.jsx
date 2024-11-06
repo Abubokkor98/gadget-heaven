@@ -81,7 +81,7 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
-        {/* hero section */}
+        {/* banner */}
         <Banner />
       </div>
     </div>
