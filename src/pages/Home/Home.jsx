@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     if (categoryId === "all-products" || !categoryId) {
-      setCatProducts(products.slice(0, 12));
+      setCatProducts(products.slice(0, 9));
     } else {
       const findProducts = products.filter((category) => {
         return category.category === categoryId;
@@ -32,15 +32,14 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-72">
-        <h1 className="text-3xl font-bold text-center">
+      <div className="mt-80">
+        <h1 className="text-3xl font-bold text-center text-purple-700">
           Explore Cutting-Edge Gadgets
         </h1>
 
-        {/* main category and cards section */}
-        <div className="flex lg:flex-row flex-col gap-5 mt-10 ">
-          {/* Category btn */}
-          <div className="w-[20%] bg-white border rounded-2xl h-full  flex flex-col gap-5 p-5">
+        <div className="flex flex-col lg:flex-row gap-5 mt-10 ">
+          {/* dynamic buttons */}
+          <div className="md:w-[20%] border rounded-2xl h-full  flex flex-col gap-5 p-5">
             <NavLink
               onClick={handelIsActive}
               to="/category/all-products"
@@ -63,7 +62,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="w-[80%] grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 h-full">
+          <div className="md:w-[80%] grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 h-full">
             {catProducts.length !== 0 ? (
               <>
                 {catProducts.map((card) => (
@@ -71,8 +70,8 @@ const Home = () => {
                 ))}
               </>
             ) : (
-              <h1 className="font-bold text-4xl text-purple-600">
-                Not Data Found
+              <h1 className="font-bold text-4xl text-purple-600 pt-40">
+                Data Not Found
               </h1>
             )}
           </div>

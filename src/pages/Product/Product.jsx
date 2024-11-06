@@ -12,7 +12,6 @@ const Product = () => {
   const { products, handelWishlist, handelAddToCart } =
     useContext(ProductContext);
   const [isAdded, setIsAdded] = useState(false);
-
   const { productId } = useParams();
 
   if (!products || products.length === 0) {
@@ -23,7 +22,6 @@ const Product = () => {
   const {
     product_title,
     product_image,
-
     price,
     description,
     Specification,
@@ -40,9 +38,9 @@ const Product = () => {
     document.title = `${product_title} | GadgetHeaven`;
   }, []);
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen pb-[700px] md:pb-0">
       <Header />
-      <div className="bg-purple-600 text-white py-5 rounded-xl h-96 ">
+      <div className="bg-purple-600 text-white py-5 rounded-xl h-60 md:h-96">
         <Heading
           title={"Product Details"}
           p={
@@ -50,72 +48,74 @@ const Product = () => {
           }
         />
       </div>
-      {/* card */}
-      <div className="flex absolute top-0 bg-white right-0 left-0 lg:mx-40  my-60 rounded-xl">
-        <div className=" p-10 ">
-          <div className="p-5  rounded-xl border">
+      
+      {/* Card */}
+      <div className="flex flex-col lg:flex-row absolute top-52 md:top-40 lg:top-32 bg-white md:mx-20 lg:mx-40 p-5 lg:p-10 my-20 rounded-xl shadow-lg space-y-5 lg:space-y-0 lg:space-x-10">
+        {/* Image Section */}
+        <div className="flex justify-center lg:justify-start lg:w-1/2">
+          <div className="p-5 rounded-xl border">
             <img
-              className="rounded-2xl w-[600px] h-[600px]   object-cover"
+              className="rounded-2xl w-full h-64 md:h-96 object-cover"
               src={product_image}
               alt=""
             />
           </div>
         </div>
 
-        <div className="flex flex-col mt-10 space-y-3">
-          <h1 className="text-2xl font-bold">{product_title}</h1>
+        {/* Product Details Section */}
+        <div className="flex flex-col lg:w-1/2 mt-5 lg:mt-0 space-y-4">
+          <h1 className="text-xl md:text-2xl font-bold">{product_title}</h1>
           <span className="font-semibold text-lg">Price: ${price}.00</span>
           <div>
             <span
               disabled={true}
-              className={`rounded-full text-sm  p-1 px-4 ${
+              className={`rounded-full text-sm p-1 px-4 ${
                 availability
                   ? "bg-green-100 text-green-600 border border-green-500"
                   : "bg-red-100 text-red-600 border border-red-500"
               } `}
             >
-              {availability ? "In Stack" : "Out of Stack"}
+              {availability ? "In Stock" : "Out of Stock"}
             </span>
           </div>
-          <p className="text-gray-500">{description}</p>
+          <p className="text-gray-500 text-sm md:text-base">{description}</p>
           <div>
-            <h4 className="font-bold ">Specification: </h4>
-            <ol className="text-gray-500 ml-2">
+            <h4 className="font-bold">Specification: </h4>
+            <ul className="text-gray-500 ml-2 list-disc list-inside">
               {Specification.map((item, idx) => (
-                <>
-                  <li key={idx}>
-                    {idx + 1}. {item}
-                  </li>
-                </>
+                <li key={idx}>
+                  {item}
+                </li>
               ))}
-              <li></li>
-            </ol>
+            </ul>
           </div>
           <div>
-            <span>Rating</span>
+            <span className="font-bold">Rating</span>
             <div className="flex items-center gap-1">
               <ReactStars
                 count={5}
-                size={30}
+                size={24}
                 value={rating}
                 activeColor="#ffd700"
               />
               <span>{rating}</span>
             </div>
           </div>
-          <div className="flex gap-2">
+          
+          {/* Action Buttons */}
+          <div className="flex gap-2 mt-4">
             <button
               onClick={() => handelAddToCart(findProduct)}
-              className="btn rounded-full bg-purple-600 text-white"
+              className="flex items-center gap-2 btn rounded-full bg-purple-600 text-white px-4 py-2 text-sm md:text-base"
             >
-              Add to Cart <IoCartOutline className="text-xl" />
+              Add to Cart <IoCartOutline className="text-lg" />
             </button>
             <button
               onClick={() => handelWishlistBtn(findProduct)}
               disabled={isAdded}
-              className="btn rounded-full text-lg bg-transparent border hover:bg-purple-600 hover:text-white"
+              className="flex items-center gap-2 btn rounded-full text-purple-600 border border-purple-600 hover:bg-purple-600 hover:text-white px-4 py-2 text-sm md:text-base"
             >
-              <FaRegHeart className="" />
+              <FaRegHeart className="text-lg" /> {isAdded ? "Added" : "Wishlist"}
             </button>
           </div>
         </div>

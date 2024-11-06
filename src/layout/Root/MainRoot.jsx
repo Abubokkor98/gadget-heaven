@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 export const ProductContext = createContext();
+
 const msgInfo = {
   position: "top-center",
   autoClose: 2000,
@@ -11,6 +12,7 @@ const msgInfo = {
   pauseOnHover: true,
   draggable: true,
 };
+
 const MainRoot = () => {
   const [products, setProducts] = useState([]);
   const [cartArray, setCartArray] = useState([]);
