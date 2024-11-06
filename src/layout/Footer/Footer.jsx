@@ -1,34 +1,48 @@
 import Heading from "../../components/Heading/Heading";
 
+
 const Footer = () => {
   return (
-    <footer className=" bg-gray-100  p-10 pt-28 mt-20">
+    <footer className="bg-gray-100 py-8 px-4">
+      <div className="text-center mb-6">
       <Heading
         title={"Gadget Heaven"}
         p={"Leading the way in cutting-edge technology and innovation."}
       />
-      <div className="divider container mx-auto mb-5"></div>
-      <div className="footer container mx-auto text-slate-800 font-medium justify-around  items-center">
-        <nav>
-          <h6 className="footer-title text-xl">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title text-xl">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title text-xl">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav>
+      </div>
+      
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Services</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>Product Support</li>
+            <li>Order Tracking</li>
+            <li>Shipping & Delivery</li>
+            <li>Returns</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Company</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Legal</h3>
+          <ul className="space-y-2 text-gray-600">
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-gray-300 mt-8 pt-4 text-center text-gray-500 text-sm">
+        © {new Date().getFullYear()} Gadget Heaven. All rights reserved.
       </div>
     </footer>
   );

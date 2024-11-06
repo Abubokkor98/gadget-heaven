@@ -21,7 +21,7 @@ const MainRoot = () => {
     setCartArray((prev) => [...prev, cartItem]);
     toast.success("Item added to cart", msgInfo);
   };
-  
+
   const handelWishlist = (wishlistItem) => {
     const findToWishlist = wishlistArray.find(
       (item) => item.product_id === wishlistItem.product_id
@@ -62,7 +62,10 @@ const MainRoot = () => {
           </div>
         </ProductContext.Provider>
       </div>
-      <Footer />
+      {/* footer */}
+      <div className="mt-32 max-w-screen-2xl mx-auto">
+        <Footer />
+      </div>
     </div>
   );
 };
