@@ -51,7 +51,6 @@ const Product = () => {
       
       {/* Card */}
       <div className="flex flex-col lg:flex-row absolute top-52 md:top-40 lg:top-32 bg-white md:mx-20 lg:mx-40 p-5 lg:p-10 my-20 rounded-xl shadow-lg space-y-5 lg:space-y-0 lg:space-x-10">
-        {/* Image Section */}
         <div className="flex justify-center lg:justify-start lg:w-1/2">
           <div className="p-5 rounded-xl border">
             <img
@@ -62,7 +61,6 @@ const Product = () => {
           </div>
         </div>
 
-        {/* Product Details Section */}
         <div className="flex flex-col lg:w-1/2 mt-5 lg:mt-0 space-y-4">
           <h1 className="text-xl md:text-2xl font-bold">{product_title}</h1>
           <span className="font-semibold text-lg">Price: ${price}.00</span>
@@ -102,7 +100,6 @@ const Product = () => {
             </div>
           </div>
           
-          {/* Action Buttons */}
           <div className="flex gap-2 mt-4">
             <button
               onClick={() => handelAddToCart(findProduct)}

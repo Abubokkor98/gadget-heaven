@@ -23,12 +23,11 @@ const CartPage = () => {
         />
       </div>
 
-      {/* Cart Header */}
+
       <div className="flex flex-col md:flex-row justify-between items-center mt-10 px-4 md:px-10">
-        <h3 className="font-bold text-xl md:text-2xl">Your Carts Here</h3>
+        <h3 className="font-bold text-xl md:text-2xl text-purple-700">Your Carts Here</h3>
       </div>
 
-      {/* Cart Items */}
       <div className="flex flex-col gap-5 mt-5 px-4 md:px-10">
         {cartArray.map((cart) => (
           <Carts cart={cart} key={cart.product_id} />

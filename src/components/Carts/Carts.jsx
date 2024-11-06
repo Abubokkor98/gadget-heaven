@@ -17,9 +17,9 @@ const Cart = ({ cart, isRemove = false }) => {
   const { cartArray, setCartArray } = useContext(ProductContext);
 
   const handelCartRemove = (id) => {
-    const filterNadRemove = cartArray.filter((item) => item.product_id !== id);
-    setCartArray(filterNadRemove);
-    toast.warning("Item removed successfully", msgInfo);
+    const remove = cartArray.filter((item) => item.product_id !== id);
+    setCartArray(remove);
+    toast.warning("Item removed from Cart", msgInfo);
   };
 
   return (

@@ -54,6 +54,7 @@ const MainRoot = () => {
             handelWishlist,
             cartArray,
             wishlistArray,
+            setWishlistArray,
             setCartArray,
             historyArray,
             setHistoryArray,

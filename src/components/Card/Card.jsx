@@ -4,7 +4,7 @@ import ReactStars from "react-rating-stars-component";
 const Card = ({ card }) => {
   const {product_image,product_title,price,rating,slug} = card;
   return (
-    <div className="transition hover:scale-105 w-full overflow-hidden border rounded-md shadow-md">
+    <div className="transition md:hover:scale-105 w-full overflow-hidden border rounded-md shadow-md">
       <figure className="p-2 ">
         <img
           src={product_image}
