@@ -1,5 +1,22 @@
 # Gadget Heaven
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![JSX](https://img.shields.io/badge/JSX-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/introducing-jsx.html)
+[![Components](https://img.shields.io/badge/Components-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/components-and-props.html)
+[![Props](https://img.shields.io/badge/Props-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/components-and-props.html)
+[![State](https://img.shields.io/badge/State-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/state-and-lifecycle.html)
+[![Hooks](https://img.shields.io/badge/Hooks-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/hooks-intro.html)
+[![Lifecycle Methods](https://img.shields.io/badge/Lifecycle_Methods-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+[![Event Handling](https://img.shields.io/badge/Event_Handling-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/handling-events.html)
+[![React Toastify](https://img.shields.io/badge/React_Toastify-F9A825?style=for-the-badge&logo=react&logoColor=white)](https://fkhadra.github.io/react-toastify/)
+[![Context API](https://img.shields.io/badge/Context_API-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/context.html)
+[![Favicon](https://img.shields.io/badge/Favicon-FF5722?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/docs/favicon.html)
+[![React Rating](https://img.shields.io/badge/React_Rating-FF9800?style=for-the-badge&logo=react&logoColor=white)](https://www.npmjs.com/package/react-rating-stars-component)
+![Surge](https://img.shields.io/badge/Surge-ffffff?style=for-the-badge&logo=surge&logoColor=black)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
+
+## Requirement Document
+- **Link**: [Gadget Heaven Requirement Document](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Abubokkor98/blob/main/Project-Requirement.pdf)
 
 ## 🌐 Live Demo
 - **Netlify**: [Dream11 BPL Hub Live](https://a8-gadgets-heaven.netlify.app/)
