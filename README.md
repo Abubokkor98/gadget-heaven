@@ -19,8 +19,8 @@
 - **Link**: [Gadget Heaven Requirement Document](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Abubokkor98/blob/main/Project-Requirement.pdf)
 
 ## 🌐 Live Demo
-- **Netlify**: [Dream11 BPL Hub Live](https://a8-gadgets-heaven.netlify.app/)
-- **Surge**: [Dream11 BPL Hub Live](https://dream11-bpl.surge.sh)
+- **Netlify**: [Gadget Heaven Live](https://a8-gadgets-heaven.netlify.app/)
+- **Surge**: [Gadget Heaven Live](https://a8-gadgets-heaven.surge.sh/)
 
 ## 📝 Project Description
 Gadget Heaven is an engaging and interactive e-commerce platform designed to showcase the latest gadgets and accessories. The platform provides users with a seamless shopping experience, allowing them to browse, add products to their cart or wishlist, and track their purchase history. With a responsive design and intuitive interface, Gadget Heaven is optimized for various devices, ensuring a smooth user experience across desktops, tablets, and mobile phones.
