@@ -23,8 +23,7 @@ const Cart = ({ cart, isRemove = false }) => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-5 bg-gray-100 rounded-xl p-5">
-      {/* Product Image */}
+    <div className="flex flex-col md:flex-row justify-between gap-5 bg-gray-100 rounded-xl p-5 mt-5">
       <div className="w-full md:w-52 h-52 flex-shrink-0">
         <img
           src={cart?.product_image}
@@ -33,7 +32,6 @@ const Cart = ({ cart, isRemove = false }) => {
         />
       </div>
       
-      {/* Product Info */}
       <div className="flex flex-col justify-center space-y-2 md:space-y-3 w-full">
         <h1 className="font-bold text-lg md:text-2xl">{cart?.product_title}</h1>
         <p className="text-sm md:text-base text-gray-600">{cart?.description}</p>
@@ -42,7 +40,7 @@ const Cart = ({ cart, isRemove = false }) => {
         </span>
       </div>
 
-      {/* Remove Button */}
+      {/* remove btn */}
       {!isRemove && (
         <button
           onClick={() => handelCartRemove(cart.product_id)}

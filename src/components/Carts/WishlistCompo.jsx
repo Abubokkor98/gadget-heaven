@@ -24,7 +24,7 @@ const WishlistCompo = ({ wishlist }) => {
         </div>
       </div>
 
-      <button className="cursor-pointer mt-5 md:mt-0 self-center md:self-start">
+      <button className="cursor-pointer mt-5 md:mt-0 self-center">
         <FaRegTrashCan className="text-2xl md:text-3xl text-red-500" />
       </button>
     </div>

@@ -51,7 +51,7 @@ const Dashboard = () => {
   const handelPurchaseBtn = () => {
     sortPrice;
     setCartArray([]);
-    toast.success("Successfully Purchase your items ", msgInfo);
+    toast.success("Item Purchase Successfully", msgInfo);
     document.getElementById("purchaseModel").showModal();
     setHistoryArray((prev) => [...prev, ...cartArray]);
 
@@ -61,7 +61,6 @@ const Dashboard = () => {
   useEffect(() => {
     document.title = "Dashboard | GadgetHeaven";
   }, []);
-  console.log(totalPrice);
 
   return (
     <div className="p-1 pt-6">
@@ -92,33 +91,38 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-10 ">
-        <h3 className="font-bold text-2xl">{isCart ? "Cart" : "Wishlist"}</h3>
+      <div className="flex flex-col md:flex-row justify-between items-center mt-10">
+        <h3 className="font-bold text-2xl text-center text-purple-700 md:text-left">
+          {isCart ? "Cart" : "Wishlist"}
+        </h3>
         {isCart && (
-          <div className="space-x-3">
-            <span className="font-bold text-xl">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-5 mt-4 md:mt-0 w-full md:w-auto">
+            <div className="font-bold text-xl text-center">
               Total cost: ${totalPrice}
               {totalPrice !== 0 && ".00"}
-            </span>
-            <button
-              onClick={handelSortByPrice}
-              disabled={totalPrice === 0 ? true : false}
-              className={`btn rounded-full disabled border-purple-500 text-purple-500 px-10 `}
-            >
-              Sort by Price <HiAdjustmentsVertical className="text-2xl" />
-            </button>
-            <button
-              onClick={handelPurchaseBtn}
-              disabled={totalPrice === 0 ? true : false}
-              className={`btn border rounded-full  bg-purple-600 text-white px-14 ${
-                totalPrice === 0 ? "disabled" : ""
-              }`}
-            >
-              Purchase
-            </button>
+            </div>
+            <div className="flex gap-3 w-full justify-center md:justify-start">
+              <button
+                onClick={handelSortByPrice}
+                disabled={totalPrice === 0 ? true : false}
+                className={`btn rounded-full disabled:border-purple-500 text-purple-500 px-10 py-2`}
+              >
+                Sort by Price <HiAdjustmentsVertical className="text-2xl" />
+              </button>
+              <button
+                onClick={handelPurchaseBtn}
+                disabled={totalPrice === 0 ? true : false}
+                className={`btn border rounded-full bg-purple-600 text-white px-10 py-2 ${
+                  totalPrice === 0 ? "disabled" : ""
+                }`}
+              >
+                Purchase
+              </button>
+            </div>
           </div>
         )}
       </div>
+
       {/* card */}
       {isCart
         ? cartArray.map((cart) => <Carts cart={cart} key={cart.product_id} />)
@@ -130,7 +134,7 @@ const Dashboard = () => {
             />
           ))}
 
-        {/* modal */}
+      {/* modal */}
       <dialog
         id="purchaseModel"
         className="modal modal-middle sm:modal-middle flex justify-center items-center text-center lg:px-0 px-3"
@@ -140,7 +144,7 @@ const Dashboard = () => {
             <img src="./assets/Group.png" className="w-20" alt="" />
           </div>
           <h3 className="text-4xl font-bold text-gray-800">
-            Payment Successful
+            Payment Successfully
           </h3>
 
           <p className="py-4 font-semibold text-xl" id="errorId"></p>

@@ -36,10 +36,6 @@ const MainRouter = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/products",
-        element: <div>Products</div>,
-      },
-      {
         path: "/product/:productId",
         element: <Product />,
       },
