@@ -21,7 +21,7 @@ const Statistics = () => {
 
   return (
     <>
-      <div className="p1 pt-6">
+      <div className="p-1 pt-6">
         <Header />
         <div className="bg-purple-600 text-white py-5  rounded-xl">
           <Heading
