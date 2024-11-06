@@ -23,7 +23,7 @@ const Wishlist = () => {
 
       {/* card */}
       <div className="flex justify-between items-center mt-10 ">
-        <h3 className="font-bold text-2xl">Your Wishlists Here</h3>
+        <h3 className="font-bold text-2xl text-purple-700">Your Wishlist</h3>
       </div>
       {wishlistArray.map((wishlist) => (
         <WishlistCompo key={wishlist.product_id} wishlist={wishlist} />

@@ -1,8 +1,8 @@
 [
   {
     "product_id": 1,
-    "product_title": "Smartphone with Triple Camera",
-    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643527/assignment/B8/uamqs1mpohvuoonnzitx.jpg",
+    "product_title": "Triple Camera Smartphone",
+    "product_image": "https://i.ibb.co.com/tqg5srZ/triplecamera.webp",
     "category": "Mobiles",
     "price": 699,
     "description": "Sleek smartphone with triple camera system and fast-charging support.",
@@ -36,7 +36,7 @@
   {
     "product_id": 3,
     "product_title": "Portable Charger 10000mAh",
-    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643528/assignment/B8/mppuf6mj0pcsaixmxrfm.jpg",
+    "product_image": "https://i.ibb.co.com/BK8QQVw/Portable-Charger.jpg",
     "category": "Accessories",
     "price": 809,
     "description": "Compact 10000mAh portable charger for fast, on-the-go charging.",
@@ -71,7 +71,7 @@
   {
     "product_id": 5,
     "product_title": "Yoga Mat",
-    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643526/assignment/B8/y8eyvbuc8tdzf1sgzyfx.jpg",
+    "product_image": "https://i.ibb.co.com/7JfrxWQ/Yoga-Mat.jpg",
     "category": "Accessories",
     "price": 663,
     "description": "Durable and non-slip yoga mat for all levels of practice.",
@@ -143,7 +143,7 @@
   {
     "product_id": 9,
     "product_title": "Bluetooth Speaker",
-    "product_image": "https://res.cloudinary.com/nodelove/image/upload/v1730643522/assignment/B8/f9geehmziei1iljcrodb.avif",
+    "product_image": "https://i.ibb.co.com/6gDLyhG/Bluetooth-Speaker.jpg",
     "category": "Audio",
     "price": 172,
     "description": "Portable Bluetooth speaker with powerful bass and 10-hour battery life.",
