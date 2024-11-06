@@ -15,7 +15,7 @@ const Banner = () => {
           to={"/dashboard"}
           className="btn bg-white text-purple-600 px-6 font-bold rounded-full text-sm md:text-lg"
         >
-          Show Now
+          Shop Now
         </NavLink>
       </div>
 
