@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="mt-80">
+      <div className="mt-44 md:mt-80">
         <h1 className="text-3xl font-bold text-center text-purple-700">
           Explore Cutting-Edge Gadgets
         </h1>
